@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Copperplate, Papyrus, fantasy;
+    background-color: #1c2c44;
+}
+
+.contact-container{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly ;
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #d7bb88;
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1c2c44;
+    width: 100%;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    height: 50px; /* Adjust the height to match the navbar */
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    display: block;
+    color: #d7bb88;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+.divider {
+    display: block;
+    border: none;            
+    height: 2px;             
+    background-color: #8a9bb3;  
+    width: 120%;              
+    margin: 20px auto; 
+    opacity: 0.6; 
+  }
+
+  .contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 25px;
+    font-weight: 500;
+    color: #575757;
+    border-radius: 50px;
+  }
+
+  .contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+  }
+
+  .contact-inputs:focus{
+    border: 2px solid #d7bb88;
+  }
+
+  .contact-inputs::placeholder {
+    color: #8a9bb3;
+  }
+
+  .contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    gap: 10px;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .contact-left button img {
+    height: 15px;
+    width: 15px;
+  }
