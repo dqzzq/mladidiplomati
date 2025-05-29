@@ -14,15 +14,18 @@
 <body>
   
 <nav class="navbar">
-    <div class="logo">
+  <div class="logo">
         <img class="image_logo" src="logo/logo MD copy 2.png" alt="Mladi Diplomati">
-    </div>
-    <div class="nav-links">
-        <a href="index.html">Hlavná Stranka</a>
-        <a href="workshops.html">Workshopy</a>
-        <a href="senmun.html">SenMUN</a>
-        <a href="kontakt.html">Kontakt</a>
-    </div>
+  </div>
+
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+  <div class="nav-links">
+    <a href="index.html">Hlavná Stranka</a>
+    <a href="workshops.html">Workshopy</a>
+    <a href="senmun.html">SenMUN</a>
+    <a href="kontakt.html">Kontakt</a>
+  </div>
 </nav>
 <main id="swup" class="transition-fade">
 
@@ -195,8 +198,11 @@
         prevEl: '.swiper-button-prev',
       },
     });
+
+      function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('show');
+  }
   </script>
 </main>
 </body>
 </html>
-
