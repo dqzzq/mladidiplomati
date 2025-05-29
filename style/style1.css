@@ -19,6 +19,16 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #d7bb88;
+  z-index: 2000;
+  margin-left: auto;
+}
+
+
 .logo img {
     height: 50px;
     width: auto;
@@ -27,6 +37,7 @@ body {
 .nav-links {
     display: flex;
     gap: 20px;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-links a {
@@ -66,6 +77,13 @@ h1 {
     opacity: 0.6;
 }
 
+.divider2 {
+    height: 2px;
+    background-color: #8a9bb3;
+    width: 60%;
+    margin: lefy;
+    opacity: 0.6;
+}
 .paragraph {
     max-width: 800px;
     margin: 0 auto;
