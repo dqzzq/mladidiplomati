@@ -25,16 +25,25 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Logo Styling */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #d7bb88;
+  z-index: 2000;
+  margin-left: auto;
+}
+
 .logo img {
-    height: 50px; /* Adjust the height to match the navbar */
+    height: 50px;
     width: auto;
 }
 
-/* Navbar Links */
 .nav-links {
     display: flex;
     gap: 20px;
+    transition: all 0.3s ease-in-out;
+
 }
 
 .nav-links a {
@@ -286,3 +295,4 @@ footer {
 @media (max-width: 768px) {
     .footer-container { flex-direction: column; }
 }
+
