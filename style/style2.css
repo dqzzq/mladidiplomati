@@ -41,6 +41,15 @@ h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #d7bb88;
+  z-index: 2000;
+  margin-left: auto;
+}
+
 .logo img {
     height: 50px; /* Adjust the height to match the navbar */
     width: auto;
@@ -49,6 +58,8 @@ h2 {
 .nav-links {
     display: flex;
     gap: 20px;
+    transition: all 0.3s ease-in-out;
+
 }
 
 .nav-links a {
@@ -116,11 +127,29 @@ h2 {
     width: 15px;
   }
 
-@media (max-width:800px) {
-    .contact-inputs{
-        width: 800vw;
-    }
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+  }
+
+  .contact-left {
+    width: 100%;
+    align-items: center;
+  }
+
+  .contact-inputs {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .contact-left textarea {
+    width: 90%;
+    max-width: 400px;
+  }
 }
+
 
 footer {
     background-color: #ffffff; /* Blue background */
@@ -231,4 +260,25 @@ footer {
 .footer-container { display: flex; flex-wrap: wrap; justify-content: space-between; text-align: center; }
 @media (max-width: 768px) {
     .footer-container { flex-direction: column; }
+}
+
+@media (max-width: 768px) {
+  .contact-right {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 22px;
+  }
+
+  .paragraph-footer,
+  .footer-column p {
+    font-size: 13px;
+  }
 }
