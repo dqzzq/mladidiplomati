@@ -10,6 +10,9 @@
     <div class="logo">
         <img class="image_logo" src="logo/logo MD copy 2.png" alt="Mladi Diplomati">
     </div>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
     <div class="nav-links">
         <a href="index.html">Hlavna Stranka</a>
         <a href="workshops.html">Workshopy</a>
@@ -20,13 +23,13 @@
   <div class="contact-container">
     <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
         <div class="contact-left-title">
-            <h2> Kontaktujte nás</h2>
+            <h2> Get in Touch</h2>
             <hr class="divider">
         </div>
         <input type="hidden" name="access_key" value="33dda1b8-ac4a-40b7-9f4b-1afb7e9ecb1e">
-        <input type="text" name="name" placeholder="Meno a priezvisko" class="contact-inputs" required>
-        <input type="email" name="email" placeholder="E-mail" class="contact-inputs" required>
-        <textarea name="message" placeholder="Správa" class="contact-inputs" required> </textarea>
+        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+        <input type="email" name="email" placeholder="Your E-mail" class="contact-inputs" required>
+        <textarea name="message" placeholder="Your Message" class="contact-inputs" required> </textarea>
         <button type="submit"> Submit </button>
     </form>
 
@@ -77,6 +80,10 @@
     </div>
   
   </footer>
-  
+<script>
+    function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('show');
+  }
+</script>
 </body>
 </html>
