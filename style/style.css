@@ -2,7 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Copperplate, Papyrus, fantasy;
+}
+
+body, h1, h2, .title {
+  font-family: 'OPTICopperplate', sans-serif;
+  font-size: 12px;
 }
 
 body {
@@ -14,7 +18,6 @@ body {
     background-color: #1c2c44;
 }
 
-/* Navbar Styling */
 .navbar {
     display: flex;
     align-items: center;
@@ -64,18 +67,18 @@ body {
 h1 {
     margin-top: 30px;
     color: #F2DEBF;
-    font-family: Copperplate, Papyrus, fantasy;
-    font-size: 50px;
-    letter-spacing: 1px;
+    font-size: 30px;
+    letter-spacing: 2px;
     text-align: center;
 }
 
 h2 {
     text-align: center;
+    font-size: 15px;
+    margin-top: auto;
     font-weight: 400;
     letter-spacing: 1px;
     color: #666;
-    font-family: Copperplate, Papyrus, fantasy;
 }
 
 .divider {
@@ -92,7 +95,6 @@ h2 {
     margin-top: 30px;
     text-align: center;
     color: #ffffff;
-    font-family: Copperplate, Papyrus, fantasy;
     font-size: 30px;
 }
 
@@ -189,7 +191,6 @@ footer {
     background-color: #ffffff; /* Blue background */
     color: #575757;
     padding: 40px 20px;
-    font-family: Copperplate, Papyrus, fantasy;
 }
 
 .footer-container {
@@ -246,6 +247,20 @@ footer {
     filter: invert(100%); /* Make icons white */
 }
 
+
+
+@font-face {
+    font-family: 'OPTICopperplate';
+    src: url('./fonts/OPTICopperplate-Heavy.woff2') format('woff2'),
+        url('./fonts/OPTICopperplate-Heavy.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
 /* Responsive for smaller screens */
 @media (max-width: 768px) {
     .footer-container {
@@ -295,4 +310,3 @@ footer {
 @media (max-width: 768px) {
     .footer-container { flex-direction: column; }
 }
-
