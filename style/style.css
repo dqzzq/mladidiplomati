@@ -63,7 +63,6 @@ body {
     border-radius: 4px;
 }
 
-/* Adjusted Content Below Navbar */
 h1 {
     margin-top: 30px;
     color: #F2DEBF;
@@ -103,6 +102,18 @@ h2 {
     margin: 0 auto;
     padding: 20px 30px;
     text-align: center;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 2;
+    font-weight: 300;
+}
+
+.paragraph23 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    text-align: right;
     color: #ffffff;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
@@ -166,21 +177,21 @@ h2 {
 
 #about-section {
     display: flex;
-    justify-content: center;  /* Center content horizontally */
-    align-items: center;      /* Align items vertically */
-    gap: 40px;               /* Space between gallery and text */
+    justify-content: center;  
+    align-items: center;
+    gap: 40px;               
     width: 90%;
     max-width: 1200px;
     margin: 50px auto;
 }
 
 .gallery-container {
-    flex: 1; /* Takes up 50% of the space */
+    flex: 1; 
     max-width: 50%;
 }
 
 .text-container {
-    flex: 1; /* Takes up 50% of the space */
+    flex: 1; 
     max-width: 50%;
     color: white;
     text-align: left;
@@ -208,13 +219,24 @@ footer {
 }
 
 .footer-column h3 {
-    font-size: 18px;
+    font-size: 12px;
     margin-bottom: 10px;
+    text-align: left;
 }
 
 .footer-column p {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.6;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+.paragraph-foot {
+    font-size: 12px;
+    line-height: 1.6;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 100px;
+    align-items: center;
 }
 
 .footer-divider {
@@ -225,26 +247,28 @@ footer {
 
 .footer-bottom {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
+    align-items: center; 
+    justify-content: center;
     margin: 0 auto;
-    flex-wrap: wrap;
+    text-align: center;
 }
 
 .footer-bottom p {
-    font-size: 14px;
     margin: 0;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.social-icons a {
-    margin-left: 10px;
+.social-icons {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    margin-top: 10px;
 }
 
 .social-icons img {
     width: 24px;
     height: 24px;
-    filter: invert(100%); /* Make icons white */
 }
 
 
