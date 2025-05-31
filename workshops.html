@@ -1,153 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="sk">
 <head>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MD - Workshopy</title>
+  <link rel="stylesheet" href="style/workshops.css">
+  <link rel="icon" type="image/x-icon" href="logo/favicon.ico">
 
 </head>
 <body>
-  
+
 <nav class="navbar">
-    <div class="logo">
-        <img class="image_logo" src="logo/logo MD copy 2.png" alt="Mladi Diplomati">
-    </div>
-    <div class="nav-links">
-        <a href="index.html">Hlavna Stranka</a>
-        <a href="workshops.html">Workshopy</a>
-        <a href="senmun.html">SenMUN</a>
-        <a href="kontakt.html">Kontakt</a>
-    </div>
+  <div class="logo">
+    <img class="image_logo" src="logo/logo MD copy 2.png" alt="Mladi Diplomati">
+  </div>
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  <div class="nav-links">
+    <a href="index.html">Hlavná Stránka</a>
+    <a href="workshops.html">Workshopy</a>
+    <a href="senmun.html">SenMUN</a>
+    <a href="kontakt.html">Kontakt</a>
+  </div>
 </nav>
 
-<h1>Mladí Diplomati</h1>
-<h2>Tvoríme budúcich lídrov medzinárodného porozumenia.</h2>  
-<hr class="divider">
+<section class="workshops-section">
+  <h1>Workshopy a školské prezentácie</h1>
+  <hr class="divider">
+  <p class="paragraph">
+    Okrem konferencie SenMUN organizujeme aj individuálne workshopy, projekty, prezentácie
+    na školách – spájajúc OSN, našu konferenciu, mládežnícku participáciu, kritické myslenie a iné
+    praktické a neformálne využitie „soft skills“ v 40-minútové segmenty pre stredné aj základné školy.   </p>
+  <p class="paragraph">
+    Pri práci s mládežou aplikujeme zdravý balans medzi teóriou a praxou; na začiatku žiakov
+    povzbudíme k akcii rôznymi aktivitami na prebudenie sa, tzv. energizer. Táto aktivita môže mať
+    podobu rôznych otázok žiadajúcich hlboké zamyslenie sa a následné ponorenie sa do debaty so
+    spolužiakmi, alebo ide o inú praktickú aktivitu so zameraním na skupinovú prácu žiakov a následnú
+    prezentáciu dosiahnutých záverov. Potom študentom postupne dávkujeme informácie o všetkých
+    našich už spomínaných oblastiach záujmu – s kľúčovým faktorom – tak, aby sme nestratili ich
+    pozornosť. V triede, kde organizujeme takúto aktivitu máloktorý žiak ostane nevyvolaný.  </p>
+  <p class="paragraph">
+    Našim cieľom je aj podpora aktívneho obhajovania si svojho názoru, slušne, kultivovane a
+    berúc ohľad na argumenty ostatných. Pokladáme si ako povinnosť takéto aktivity prinášať žiakom vo
+    veku, v ktorom si začínajú formovať svoje vlastné názory. Veríme v tolerantnejšiu a kriticky-mysliacu
+    budúcu generáciu mládeže.  </p>
 
-<p class="paragraph"> Mladí Diplomati je občianske združenie, ktoré prepája mladých ľudí so záujmom o diplomaciu, medzinárodné vzťahy a nadnárodnú politiku. Chceme podporiť vzdelávanie mimo učebníc – cez diskusiu, spoluprácu a praktické skúsenosti. Naše ciele napĺňame prostredníctvom projektov neformálneho vzdelávania vrátane simulovaného zasadnutia OSN - SenMUN a workshopov na základných a stredných školách ktoré rozvíjajú kritické myslenie, rétoriku, argumentačné schopnosti a napomáhajú k porozumeniu svetu okolo nás. Veríme, že aktívne občianstvo začína tam, keď mladí ľudia dostanú priestor vyjadriť sa.
-  
-</p>
-<br>
-<br>
-<h1 class="subtitle">O Nás</h1>
+  <div class="school-section">
+    <h2>V roku 2024 sme navštívili školy:</h2>
+    <hr class="divider2">
+    <ul>
+      <li>Gymnázium Antona Bernoláka Senec</li>
+      <li>Súkromná odborná škola HOST Bratislava</li>
+      <li>Súkromná základná škola Kysucká, Senec</li>
+      <li>Základná škola Tbiliská, Bratislava</li>
+    </ul>
 
-<hr class="divider">
-
-<section id="about-section">
-  <div class="gallery-container">
-      <div class="swiper">
-          <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                  <img src="SenMUN/Secretariat.JPG" alt="Sekretariat" width="500" height="500">
-              </div>
-              <div class="swiper-slide">
-                  <img src="SenMUN/USG.JPG" alt="USG" width="500" height="500">
-              </div>
-              <div class="swiper-slide">
-                  <img src="SenMUN/DSG.JPG" alt="DSG" width="500" height="500">
-              </div>
-              <div class="swiper-slide">
-                  <img src="SenMUN/Chlapci.JPG" alt="Sekretariat" width="500" height="500">
-              </div>
-          </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-      </div>
+    <h2>V roku 2025 sme zatiaľ navštívili školy:</h2>
+    <hr class="divider2">
+    <ul>
+      <li>Gymnázium Antona Bernoláka Senec</li>
+      <li>Základná škola Jozefa Gregora Tajovského Senec</li>
+      <li>Základná škola Mlynská, Senec</li>
+      <li>Základná škola s VJM Alberta Molnára Szencziho Senec</li>
+      <li>Základná škola Tbiliská, Bratislava</li>
+      <li>Súkromná základná škola Kysucká, Senec</li>
+    </ul>
   </div>
-  
-  <div class="text-container">
-      <p class="paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in ultrices augue. Ut vestibulum, 
-          lorem eu maximus eleifend, dui sem mollis nisi, in faucibus risus enim id sem. Mauris enim tortor, 
-          auctor sit amet rhoncus interdum, ultricies eget enim. Praesent ac metus nibh. Integer nibh turpis, 
-          rhoncus vel egestas non, gravida quis lectus. Morbi volutpat nisi vel magna hendrerit, ac efficitur 
-          nibh viverra. Nullam posuere vestibulum ex, eget fringilla leo accumsan non. Cras ultrices, mauris 
-          gravida aliquet pretium, orci lorem eleifend lorem, ut imperdiet elit mi eu nisi.
-      </p>
-  </div>
-
-
 </section>
-  
-  
-<footer>
-  <div class="footer-container">
-    <div class="footer-column">
-      <h3>Fakturačné údaje</h3>
-      <p class="paragraph-footer">Názov: Mladí Diplomati </p>
-      <p class="paragraph-footer">Adresa: Nám. 1. mája 55/8, Senec </p>
-      <p class="paragraph-footer">PSČ: 90301</p>
-      <p class="paragraph-footer">IČO: 56613415</p>
-    </div>
 
-    <div class="footer-column">
-      <h3>Bankové spojenie</h3>
-      <p class="paragraph-footer">Registrované na Ministerstve vnútra SR</p>
-      <p class="paragraph-footer">Registračné číslo:</p>
-      <p class="paragraph-footer">BIC:</p>
-      <p class="paragraph-footer">IBAN: SK2911000000002947227127</p>
-    </div>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Fakturačné údaje</h3>
+        <p class="paragraph-footer">Názov: Mladí Diplomati </p>
+        <p class="paragraph-footer">Adresa: Nám. 1. mája 55/8, Senec </p>
+        <p class="paragraph-footer">PSČ: 90301</p>
+        <p class="paragraph-footer">IČO: 56613415</p>
+      </div>
 
-    <div class="footer-column">
-      <h3>Kontakt</h3>
-      <p class="paragraph-footer">E-mail: vseobecne@mladidiplomati.com</p>
-      <p class="paragraph-footer">Telefónne číslo: +421 905 408 840</p>
-    </div>
-  <br>
-  <br>
-  <div class="footer-bottom">
-    <p>Copyright © 2025 Mladí Diplomati. All Rights Reserved. </p>
-    <div class="social-icons">
-        <a href="https://www.instagram.com/senmun.25/"><img src="icons/ig.png" alt="Instagram"></a>
-        <a href="https://www.linkedin.com/company/mladidiplomati"><img src="icons/linkedin.png" alt="LinkedIn"></a>
-    </div>
-  </div>
+      <div class="footer-column">
+        <h3>Bankové spojenie</h3>
+        <p class="paragraph-footer">Registrované na Ministerstve vnútra SR</p>
+        <p class="paragraph-footer">Registračné číslo:</p>
+        <p class="paragraph-footer">BIC:</p>
+        <p class="paragraph-footer">IBAN: SK2911000000002947227127</p>
+      </div>
 
-</footer>
+      <div class="footer-column">
+        <h3>Kontakt</h3>
+        <p class="paragraph-footer">E-mail: vseobecne@mladidiplomati.com</p>
+        <p class="paragraph-footer">Telefónne číslo: +421 905 408 840</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/mladi_diplomati/"><img src="icons/ig.png" alt="Instagram"></a>
+          <a href="https://www.linkedin.com/company/mladidiplomati"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+        </div>
 
+      </div>
+      <p class="paragraph-foot">Copyright © 2025 Mladí Diplomati. All Rights Reserved. </p>
 
+  </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
-  const swiper = new Swiper('.swiper', {
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+  function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('show');
+  }
 </script>
-
 </body>
 </html>
