@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, h1, h2, .title {
+  font-family: 'OPTICopperplate', sans-serif;
+  font-size: 12px;
+}
+
+@font-face {
+    font-family: 'OPTICopperplate';
+    src: url('./fonts/OPTICopperplate-Heavy.woff2') format('woff2'),
+        url('./fonts/OPTICopperplate-Heavy.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+    background-color: #1c2c44;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1c2c44;
+    width: 100%;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #d7bb88;
+  z-index: 2000;
+  margin-left: auto;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.nav-links a {
+    display: block;
+    color: #d7bb88;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+.workshops-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 36px;
+  color: #f2debf;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #d7bb88;
+  margin-top: 30px;
+}
+
+.divider {
+  width: 60%;
+  height: 2px;
+  background-color: #8a9bb3;
+  margin: 0 auto 30px;
+  opacity: 0.6;
+  border: none;
+}
+
+.paragraph {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    text-align: left;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 2;
+    font-weight: 300;
+}
+
+
+.school-section ul {
+  margin-top: 10px;
+  margin-left: 20px;
+  color: white;
+  line-height: 2;
+}
+
+.school-section li {
+  margin-bottom: 8px;
+}
+
+.divider2 {
+    display: block;
+    border: none;            
+    height: 2px;             
+    background-color: #8a9bb3;  
+    width: 60%;              
+    margin: left; 
+    opacity: 0.6; 
+  }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    background: #1c2c44;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .workshops-section {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .paragraph {
+    font-size: 16px;
+  }
+}
+
+footer {
+    background-color: #ffffff; /* Blue background */
+    color: #575757;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin: 0 20px;
+}
+
+.footer-column h3 {
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.footer-column p {
+    font-size: 12px;
+    line-height: 1.6;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+.paragraph-foot {
+    font-size: 12px;
+    line-height: 1.6;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.footer-divider {
+    border-top: 1px solid rgb(139, 139, 139);
+    margin: 20px auto;
+    max-width: 80%;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
